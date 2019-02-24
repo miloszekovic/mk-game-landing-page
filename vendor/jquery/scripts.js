@@ -1,0 +1,1 @@
+function scrollToAnchor(o){var n=$("a[name='"+o+"']");$("html,body").animate({scrollTop:n.offset().top},"slow")}$("#link").click(function(){scrollToAnchor("top")}),$(document).ready(function(){var o;$(window).scroll(function(){o=-.4*$(window).scrollTop()+"px",$(".parallax").css({"background-position":"left top "+o})})});

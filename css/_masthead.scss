@@ -1,0 +1,132 @@
+header.masthead {
+  position: relative;
+  background: url('../img/content/header.jpg') no-repeat left top $dark;
+  @include background-cover;
+  height: 100vh;
+  background-attachment: fixed;
+  color: $gray-100;
+
+  .container {
+    @extend .middle-position;
+    top: 30%;
+    -webkit-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
+
+    .row {
+      display: block;
+      text-align: right;
+
+      @media screen and (max-width: 574px) {
+        padding: 0 15px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 5px 4px $dark;
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.8rem;
+      line-height: 1.4;
+    }
+
+    strong {
+      color: $yellow;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  img {
+    height: auto;
+    line-height: 0;
+  }
+
+  .tag-line, .small-line {
+    display: block;
+    width: $full;
+    text-align: right;
+
+    p {
+      width: 55%;
+      margin: 15px 0 0;
+      text-shadow: 0 4px 3px $dark;
+      display: inline-block;
+
+      @media screen and (max-width: 800px) {
+        width: 70%;
+      }
+    }
+  }
+
+  .tag-line {
+
+    p {
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+
+  .small-line {
+
+    p {
+      width: 50%;
+      margin: 12px 10px 0 0;
+      font-size: .8rem;
+      color: $links;
+      text-shadow: 0 0 0 $dark;
+
+      @media screen and (max-width: 500px) {
+        width: 90%;
+      }
+    }
+  }
+
+  .main-logo {
+    margin: 0 -20px 0 0;
+
+    @media screen and (max-width: 800px) {
+      margin: 0 -10px 0 0;
+    }
+
+    @media screen and (max-width: 500px) {
+      margin: 0 -5px 0 0;
+    }
+
+    img {
+      width: 60%;
+
+      @media screen and (max-width: 800px) {
+        width: 70%;
+      }
+
+      @media screen and (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .company-logo {
+    margin-bottom: 50px;
+
+    @media screen and (max-width: 574px) {
+      margin-bottom: 25px;
+    }
+
+    img {
+      width: 120px;
+    }
+  }
+
+  button {
+    margin-top: 50px;
+
+    @media screen and (max-width: 574px) {
+      margin-top: 25px;
+    }
+  }
+}

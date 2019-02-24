@@ -1,0 +1,62 @@
+.gallery {
+  background: url('../img/content/rusty-orange.jpg') no-repeat center center $orange;
+  @include background-cover;
+  padding: 7rem 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 5rem 0;
+  }
+
+  .padd {
+    @media screen and (max-width: 574px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  h2 {
+      font-size: 4rem;
+      text-shadow: 0 5px 4px $black;
+      padding-bottom: 4rem;
+
+      @media screen and (max-width: 750px) {
+        font-size: 3rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 2.4rem;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 1.8rem;
+      }
+  }
+
+  img {
+      width: $full / 4;
+      height: $full / 4;
+      line-height: 0;
+      @extend .fade;
+
+      @media screen and (max-width: 990px) {
+        width: $full / 3;
+        height: $full / 3;
+      }
+
+      @media screen and (max-width: 780px) {
+        width: $full / 2;
+        height: $full / 2;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: $full;
+        height: $full;
+        display: block;
+      }
+
+    &:hover {
+      @extend .scal;
+      @extend .fade;
+    }
+  }
+}

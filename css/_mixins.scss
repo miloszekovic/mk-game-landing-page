@@ -1,0 +1,112 @@
+// Font Mixins
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext');
+@import url('assets/neon/font.css');
+
+@mixin body-font {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@mixin title-font {
+  font-family: 'Fighting Spirit turbo', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@mixin font-size($size:1.6, $line: $size * 1.5){
+  font-size: ($size * 10) + px;
+  line-height: ($line * 10) + px;
+  font-size: $size + rem;
+  line-height: $line + rem;
+}
+
+// Background Cover Mixin
+@mixin background-cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Layout
+.middle-position {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hov { 
+  opacity:.80;
+  -moz-opacity:.80; 
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); 
+  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.act { 
+  opacity:.60; 
+  -moz-opacity:.60; 
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60); 
+  -MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+@mixin rounded--corners($size:50%) {
+  border-radius: $size;
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+}
+
+@mixin box--shadow($size) {
+  -webkit-box-shadow: $size;
+  -moz-box-shadow: $size;
+  box-shadow: $size;
+}
+
+.fade {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.no--fade, 
+.no--fade * { 
+  transition: none; 
+  -webkit-transition: none; 
+  -moz-transition: none; 
+  -ms-transition: none; 
+  -o-transition: none;  
+}
+
+@mixin transitions($transition...) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -webkit-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
+.scal {
+  -moz-transform: scale(1.075);
+  -webkit-transform: scale(1.075);
+  -o-transform: scale(1.075);
+  -ms-transform: scale(1.075);
+  transform: scale(1.075);
+}
+
+.scal--no {
+  -moz-transform: none;
+  -webkit-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+}

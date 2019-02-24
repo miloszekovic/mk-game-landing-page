@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Fighting Spirit turbo';
+    src: url('FightingSpiritturbo-BoldItalic.eot');
+    src: url('FightingSpiritturbo-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('FightingSpiritturbo-BoldItalic.woff2') format('woff2'),
+        url('FightingSpiritturbo-BoldItalic.woff') format('woff'),
+        url('FightingSpiritturbo-BoldItalic.ttf') format('truetype'),
+        url('FightingSpiritturbo-BoldItalic.svg#FightingSpiritturbo-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fighting Spirit turbo';
+    src: url('FightingSpiritturbo.eot');
+    src: url('FightingSpiritturbo.eot?#iefix') format('embedded-opentype'),
+        url('FightingSpiritturbo.woff2') format('woff2'),
+        url('FightingSpiritturbo.woff') format('woff'),
+        url('FightingSpiritturbo.ttf') format('truetype'),
+        url('FightingSpiritturbo.svg#FightingSpiritturbo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fighting Spirit turbo';
+    src: url('FightingSpiritturbo-Italic.eot');
+    src: url('FightingSpiritturbo-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FightingSpiritturbo-Italic.woff2') format('woff2'),
+        url('FightingSpiritturbo-Italic.woff') format('woff'),
+        url('FightingSpiritturbo-Italic.ttf') format('truetype'),
+        url('FightingSpiritturbo-Italic.svg#FightingSpiritturbo-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}

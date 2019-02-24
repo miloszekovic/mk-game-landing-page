@@ -1,0 +1,56 @@
+.demo {
+  background: url('../img/content/rusty-black.jpg') no-repeat center center $black;
+  @include background-cover;
+  position: relative;
+  padding: 7rem 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 5rem 0;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $gray-400;
+    padding-right: 50px;
+
+    @media screen and (max-width: 574px) {
+      padding-right: 0;
+    }
+  }
+
+  .button-wrapp {
+    display: block;
+    margin-top: 30px;
+
+    @media screen and (max-width: 574px) {
+      margin-top: 20px;
+    }
+  }
+
+  .padd {
+    @media screen and (max-width: 990px) {
+      padding-top: 60px;
+    }
+  }
+
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 135%;
+
+      @media screen and (max-width: 990px) {
+        height: 100%;
+      }
+    }
+  }
+}

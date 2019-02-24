@@ -1,0 +1,104 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+
+  @media screen and (max-width: 1025px) {
+    overflow: auto; 
+    overflow-y: auto !important; 
+    overflow-x: hidden !important;
+  }
+
+  @supports (-ms-ime-align:auto) { 
+    overflow: auto; 
+    overflow-y: auto !important; 
+    overflow-x: hidden !important;
+   }
+}
+
+body {
+  background: $dark;
+  @include body-font;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include title-font;
+  color: $light;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+a, button { 
+  text-decoration: none;
+  
+  &:hover {
+      @extend .hov;
+  }
+  
+  &:active {
+      @extend .act;
+  }
+
+  &:focus {
+      outline: 0;
+      border: 0;
+  }
+}
+
+a { 
+  color: $links;
+  
+  &:hover {
+      color: $orange;
+  }
+}
+
+.btn-lg {
+  padding: 14px 5rem 13px;
+  font-size: 1.875rem;
+  color: #fff;
+  letter-spacing: .1px;
+  background-color: $links;
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#e50914),to(#db0510));
+  background-image: -webkit-linear-gradient(top,#e50914,#db0510);
+  background-image: -moz-linear-gradient(top,#e50914,#db0510);
+  background-image: -o-linear-gradient(top,#e50914,#db0510);
+  background-image: linear-gradient(to bottom,#e50914,#db0510);
+  @include box--shadow(0 1px 0 rgba(0,0,0,.45));
+  @include rounded--corners($size:2px);
+  border: 0;
+
+  @media screen and (max-width: 574px) {
+    padding: 13px 10px 12px;
+    font-size: 1.3rem;
+    text-align: center;
+    width: $full;
+  }
+
+  &.small {
+    padding: 12px 2rem 11px;
+    font-size: 1rem;
+  }
+
+  &.ghost {
+    background-color: transparent;
+    background-image: none;
+    color: $links;
+    border: 1px solid $links;
+    margin-right: 20px;
+
+    @media screen and (max-width: 574px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

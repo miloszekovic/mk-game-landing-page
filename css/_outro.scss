@@ -1,0 +1,35 @@
+.outro {
+  background: url('../img/content/rusty-black.jpg') no-repeat center center $black;
+  @include background-cover;
+  padding: 7rem 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 5rem 0;
+  }
+
+  img {
+      width: 75%;
+      height: auto;
+      line-height: 0;
+
+      @media screen and (max-width: 570px) {
+        width: 90%;
+      }
+  }
+
+  h2 {
+    text-shadow: 0 5px 4px $black;
+    margin: -5px 0 50px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 1.7rem;
+      margin: 0 0 45px;
+    }
+
+    @media screen and (max-width: 770px) {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      margin: 0 0 30px;
+    }
+  }
+}

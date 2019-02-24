@@ -1,0 +1,35 @@
+.features-icons {
+  padding: 7rem 0;
+  background: url('../img/content/info-bg.jpg') no-repeat center top $yellow;
+  @include background-cover;
+  background-attachment: fixed;
+
+  @media screen and (max-width: 800px) {
+    padding: 5rem 0;
+  }
+
+  .features-icons-item {
+    max-width: 20rem;
+
+    h3 {
+      color: $dark;
+      padding: 15px 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    .features-icons-icon {
+      height: 7rem;
+      opacity: .7;
+
+      i {
+        font-size: 5.5rem;
+        color: $light;
+        text-shadow: 0 3px 3px #f9be74;
+      }
+    }
+  }
+}

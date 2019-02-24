@@ -1,0 +1,90 @@
+.showcase {
+
+  .container {
+    padding: 5rem 0;
+    
+    h2 {
+      font-size: 4rem;
+      color: $yellow;
+      text-shadow: 0 5px 4px $black;
+
+      @media screen and (max-width: 750px) {
+        font-size: 3rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 2.4rem;
+      }
+
+      @media screen and (max-width: 360px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .container-fluid .row {
+    border-top: 2px solid $black;
+
+    &.bottom {
+      border-bottom: 2px solid $black; 
+    }
+  }
+
+  .showcase-text {
+    padding: 3rem;
+  }
+
+  .showcase-img {
+    min-height: 30rem;
+    @include background-cover;
+    background-attachment: fixed;
+
+    @media screen and (max-width: 990px) {
+      background-size: auto 100%;
+      background-attachment: scroll;
+    }
+  }
+
+  .padd-container {
+    @media screen and (max-width: 574px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  .container-fluid {
+
+    p {
+      color: $light;
+      font-size: 1rem;
+      line-height: 2;
+      margin-top: 20px;
+    }
+  }
+
+  button {
+    @media screen and (max-width: 1200px) {
+      display: block;
+
+      &.ghost {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .button-wrapp {
+    display: block;
+    margin-top: 30px;
+
+    @media screen and (max-width: 574px) {
+      margin-top: 20px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .showcase-text {
+      padding: 5rem;
+    }
+  }
+}
