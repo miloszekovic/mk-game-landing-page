@@ -7,7 +7,7 @@ Landing page for random video game. UX / UI, Bootstrap and JS
 <img src="img/content/screenshot.jpg" width="100%" />
 
 # Demo
-<a href="http://mk.mze.ninja/">MK Landing Page</a>
+<a href="http://mze.ninja/mk/">MK Landing Page</a>
 
 # Setup
 index.html double click
